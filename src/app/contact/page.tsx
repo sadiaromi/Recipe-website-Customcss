@@ -1,12 +1,12 @@
-"use client"
 
-import styles from "./contact.module.css"
+
+import styles from "./contact.module.css";
 
 export default function Contact() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Contact Us</h1>
-      <form className={styles.form} method="POST">
+      <form className={styles.form}>
         <div className={styles.formGroup}>
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -23,6 +23,6 @@ export default function Contact() {
           Send Message
         </button>
       </form>
-    </div>
-  )
+ </div>
+);
 }
