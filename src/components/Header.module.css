@@ -1,0 +1,102 @@
+.header {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  margin-left: 1rem; 
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navList li a:hover {
+  color: var(--accent-color);
+}
+
+.navOpen {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav {
+    margin-top: 1rem;
+    width: 100%;
+    display: none;
+  }
+
+  .navOpen {
+    display: block;
+    width: 100%;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .navList li a {
+    width: 100%;
+    padding: 0.5rem 0;
+    display: block;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
